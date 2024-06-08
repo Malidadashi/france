@@ -6,6 +6,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  .slider-button{
+    position: absolute;
+    z-index: 10;
+    margin-inline: 2rem;
+    &.back-slide {
+      left: 0;
+      background: none;
+
+    }
+    &.forward-slide{
+      right: 0;
+      background: none;
+    }
+  }
 }
 
 .content {
@@ -15,9 +29,28 @@
   background-size: cover;
   background-position: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: background-image 0.5s ease-in-out;
+  .dynamic-description {
+    max-height: 12rem;
+    width: 50%;
+    position: absolute;
+    /* inset: 0; */
+    margin: auto;
+    bottom: 0;
+    background: white;
+    color: black;
+    margin: 1rem;
+    margin-bottom: -5rem;
+    border-radius: 8px;
+    .large-content{
+      display: block;
+
+      padding: 1rem;
+    }
+  }
 }
 
 .content-overlay {
@@ -27,6 +60,12 @@
   color: white;
   text-align: center;
 }
+
+.content-overlay button{
+ background: none;
+  font-size: larger;
+}
+
 
 .content-overlay h2 {
   font-size: 2rem;

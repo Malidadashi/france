@@ -1,0 +1,26 @@
+/* src/components/InspirationItem.css */
+.inspiration-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+  }
+  
+  .inspiration-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .inspiration-item h3 {
+    margin: 15px;
+    font-size: 1.5em;
+  }
+  
+  .inspiration-item p {
+    margin: 0 15px 15px;
+    color: #666;
+  }
+  

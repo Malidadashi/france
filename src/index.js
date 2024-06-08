@@ -1,17 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import { BrowserRouter, createBrowserRouter, Outlet, Route, RouterProvider, Routes } from 'react-router-dom';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import { BrowserRouter } from "react-router-dom"
+import ErrorPage from './Components/Errorpage/ErrorPage.jsx';
+import Navbar from './Components/Navbar/Navbar';
+import ContentSwitcher from './Components/Explore/ContentSwitcher.jsx';
+import GetInspired from './Components/Inspire/GetInspired.jsx';
+import EmailForm from './Components/Authenticate/EmailForm.jsx';
+import Discover from './Components/Discover/Discover.jsx';
+import reportWebVitals from './Components/Bughunter/reportWebVitals.jsx';
+import Newlight from './Components/Newlight/Newlight.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <BrowserRouter >
+    <Routes>
+      <Route path='/' element={<App />} />
+      <Route path='/*' element={<ErrorPage />} />
+      <Route path='/newidea' element={<Newlight/>}/>
+      <Route path='/getinspire' element={<GetInspired/>}/>
+
+    </Routes>
+  </BrowserRouter>
+
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+reportWebVitals(console.log);

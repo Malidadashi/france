@@ -1,0 +1,34 @@
+/* src/components/GetInspired.css */
+.get-inspired {
+  text-align: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+  margin-top: 3rem;
+}
+
+.get-inspired-header {
+  display: flex;
+  gap: 20rem;
+  justify-content: center;
+}
+
+.get-inspired-buttons {
+
+}
+.get-inspired-buttons button {
+  background: rgba(147, 97, 204, 0.445);
+  display: flexbox;
+  border-radius: 2rem;
+}
+
+.get-inspired-header-h2 {
+
+}
+
+.inspiration-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 1rem;
+}
