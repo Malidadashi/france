@@ -1,26 +1,14 @@
-import React from 'react'
-// import { br as Route, Routes } from 'react-router-dom';
-import ContentSwitcher from './Components/Explore/ContentSwitcher'
-import GetInspired from './Components/Inspire/GetInspired'
-import Discover from './Components/Discover/Discover.jsx';
-import EmailForm from './Components/Authenticate/EmailForm.jsx';
-// import { Route, Routes } from 'react-router-dom';
-import ErrorPage from './Components/Errorpage/ErrorPage.jsx';
-import Navbar from './Components/Navbar/Navbar.jsx';
+import React from 'react';
+import { Outlet } from 'react-router-dom';
+import './App.css';
 
-
-const App = () => {
-
-  return (
-    <>
-      <Navbar />
-      <Discover />
-      <GetInspired />
-
-    </>
-
-
-  )
+function App() {
+    return (
+        <div className="container">
+            <h1>Hot Coffee Menu</h1>
+            <Outlet />
+        </div>
+    );
 }
 
-export default App
+export default App;
